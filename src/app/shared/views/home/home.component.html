@@ -1,0 +1,10 @@
+<h1>Clarke Energia</h1>
+
+<form [formGroup]="formConsumo" (ngSubmit)="onSubmit()">
+  <div class="pequisa">
+      <p>Consumo Mensal de Energia (kWh)</p>
+      <input type="number" id="consumo" formControlName="consumo" name="consumo" required>
+      <button type="submit">Buscar Fornecedores</button>
+  </div>
+</form>
+  

@@ -1,0 +1,17 @@
+<div *ngIf="fornecedores$ | async as fornecedores">
+    <div *ngIf="fornecedores.length > 0; else semFornecedor">
+      <div *ngFor="let fornecedor of fornecedores">
+        <h3>{{ fornecedor.nome }}</h3>
+        <img [src]="fornecedor.logo" alt="{{ fornecedor.nome }}">
+        <p>Estado: {{ fornecedor.estado }}</p>
+        <p>Custo por kWh: {{ fornecedor.custo_kWh | currency }}</p>
+        <p>Limite mínimo de kWh: {{ fornecedor.limite_minimo_kWh }}</p>
+        <p>Total de clientes: {{ fornecedor.numero_total_clientes }}</p>
+        <p>Avaliação média: {{ fornecedor.avaliacao_media }}</p>
+      </div>
+    </div>
+    <ng-template #semFornecedor>
+      <span>Não tem fornecedor disponível.</span>
+    </ng-template>
+  </div>
+  
