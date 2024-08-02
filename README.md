@@ -1,27 +1,95 @@
 # Clarkeenergia
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
+## Tecnologias Utilizadas
 
-## Development server
+- Angular 18.0.4
+- Node v21.6.1
+- HTML5
+- CSS3
+- TypeScript
+- RxJS
+- Jasmine (para testes unitários)
+- Karma
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Como Rodar o Projeto
 
-## Code scaffolding
+### Pré-requisitos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Node.js (v21.6.1)
+- Angular CLI
 
-## Build
+### Passos para Rodar o Projeto Localmente
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone o repositório:
 
-## Running unit tests
+    ```bash
+    git@github.com:asfuture/Desafio-Clarke-Energia-Fullstack.git
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    ```
 
-## Running end-to-end tests
+2. Instale as dependências:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    ```bash
+    npm install
+    ```
 
-## Further help
+3. Rode a aplicação:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+    ```bash
+    ng serve
+    ```
+
+4. Acesse a aplicação no navegador:
+
+    ```
+    http://localhost:4200
+    ```
+
+### Executando Testes
+
+Para executar os testes unitários, utilize o comando:
+
+```bash
+ng test
+```
+## Utilizando Firebase
+### Passos para Hospedar Projeto no Firebase
+### Pré-requisitos
+- Conta no Firebase
+- Firebase CLI
+
+1. Para instalar o Firebase CLI, utilize o comando:
+  
+  ```bash
+  npm install -g firebase-tools
+  ```
+
+2. Faça login no Firebase CLI:
+
+  ```bash
+  firebase login
+  ```
+
+3. Inicialize o projeto Firebase no diretório do projeto: 
+
+  ```bash
+  firebase init
+  ```
+
+- Selecione "Hosting"
+- Escolha o projeto no Firebase
+- Configure o diretório público como "dist/nome-do-seu-projeto"
+- Configure como um aplicativo de página única (single-page app)
+
+3. Construa a aplicação para produção:
+
+```bash
+ng build --prod
+```
+
+4. Faça o deploy da aplicação:
+
+```bash
+firebase deploy
+```
