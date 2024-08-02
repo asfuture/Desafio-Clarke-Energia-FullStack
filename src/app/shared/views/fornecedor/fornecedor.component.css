@@ -89,9 +89,19 @@ img {
   }
   
   /* Responsividade para mostrar múltiplos itens em telas maiores */
-  @media (min-width: 600px) {
+  @media (max-width: 600px) {
+    .logoFornecedor {
+      width: 270px;
+  }
+    .carousel {
+      width: 100%;
+    }
     .carousel-item {
       flex: 0 0 50%; /* Dois itens por tela */
+    }
+    .carousel-item p {
+      width: 290px;
+      font-size: 20px;
     }
   }
   
