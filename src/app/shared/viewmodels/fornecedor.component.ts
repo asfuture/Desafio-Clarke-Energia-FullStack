@@ -6,15 +6,29 @@ import { Fornecedor } from '../models/fornecedor';
 @Component({
   selector: 'app-fornecedor',
   templateUrl: '../views/fornecedor/fornecedor.component.html',
-  styleUrl: '../views/fornecedor/fornecedor.component.css'
+  styleUrls: ['../views/fornecedor/fornecedor.component.css']
 })
 export class FornecedorComponent implements OnInit {
   fornecedores$!: Observable<Fornecedor[]>;
-  
-  constructor(private fornecedorService:FornecedorService) {
-  }
+  currentSlide = 0;
+
+  constructor(private fornecedorService: FornecedorService) {}
 
   ngOnInit(): void {
-    this.fornecedores$ = this.fornecedorService.valoresFornecedores$
+    this.fornecedores$ = this.fornecedorService.valoresFornecedores$;
+  }
+
+  prevSlide() {
+    this.fornecedores$.subscribe(fornecedores => {
+      const maxSlide = fornecedores.length - 1;
+      this.currentSlide = (this.currentSlide > 0) ? this.currentSlide - 1 : maxSlide;
+    });
+  }
+
+  nextSlide() {
+    this.fornecedores$.subscribe(fornecedores => {
+      const maxSlide = fornecedores.length - 1;
+      this.currentSlide = (this.currentSlide < maxSlide) ? this.currentSlide + 1 : 0;
+    });
   }
 }

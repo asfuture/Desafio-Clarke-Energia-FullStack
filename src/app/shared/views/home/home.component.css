@@ -7,14 +7,14 @@ section {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        background: #00DF7C;
+        background: linear-gradient(to bottom, #238662, #1e8d63, #1a7a54);
         border-radius: 5px;
         border: 1px solid #000;
 }
 
 h2{
     text-align: center;
-    color: #000;
+    color: #fff;
 }
 
 .paragrafo {

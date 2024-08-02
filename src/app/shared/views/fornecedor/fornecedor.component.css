@@ -2,12 +2,102 @@ img {
     width: 100px;
 }
 .logoFornecedor {
+    width: 350px;
     display: flex;
+    justify-content: space-around;
     align-items: center;
     gap: 20px;
-}
-.containerFornecedores{
-    display: flex;
-    flex-wrap: wrap;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 2px 2px;
+    padding: 10px;
 }
 
+/* fornecedores.component.css */
+.containerFornecedores {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding-top: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: #fff;
+    flex: 0 0 50%; /* Para cada item ocupar 100% do contêiner */
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .carousel-item p {
+    font-size: 21px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 1px 0px 1px 0px;
+    width: 328px;
+    text-align: center;
+  }
+  
+  .logoFornecedor img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  button.prev {
+    left: 10px;
+    border-radius: 5px;
+  }
+  
+  button.next {
+    right: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Responsividade para mostrar múltiplos itens em telas maiores */
+  @media (min-width: 600px) {
+    .carousel-item {
+      flex: 0 0 50%; /* Dois itens por tela */
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .carousel-item {
+      flex: 0 0 33.33%; /* Três itens por tela */
+    }
+  }
+  

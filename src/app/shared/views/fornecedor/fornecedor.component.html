@@ -1,19 +1,24 @@
 <div *ngIf="fornecedores$ | async as fornecedores">
-    <div class="containerFornecedores" *ngIf="fornecedores.length > 0; else semFornecedor">
-      <div *ngFor="let fornecedor of fornecedores">
-        <div class="logoFornecedor">
-          <img [src]="fornecedor.logo" alt="{{ fornecedor.nome }}">
-          <h3>{{ fornecedor.nome }}</h3>
+  <div class="containerFornecedores" *ngIf="fornecedores.length > 0; else semFornecedor">
+    <div class="carousel">
+      <div class="carousel-inner" [style.transform]="'translateX(' + (-currentSlide * 100) + '%)'">
+        <div class="carousel-item" *ngFor="let fornecedor of fornecedores">
+          <div class="logoFornecedor">
+            <img [src]="fornecedor.logo" alt="{{ fornecedor.nome }}">
+            <h3>{{ fornecedor.nome }}</h3>
+          </div>
+          <p>Estado: {{ fornecedor.estado }}</p>
+          <p>Custo por kWh: {{ fornecedor.custo_kWh | currency }}</p>
+          <p>Limite mínimo de kWh: {{ fornecedor.limite_minimo_kWh }}</p>
+          <p>Total de clientes: {{ fornecedor.numero_total_clientes }}</p>
+          <p>Avaliação média: {{ fornecedor.avaliacao_media }}</p>
         </div>
-        <p>Estado: {{ fornecedor.estado }}</p>
-        <p>Custo por kWh: {{ fornecedor.custo_kWh | currency }}</p>
-        <p>Limite mínimo de kWh: {{ fornecedor.limite_minimo_kWh }}</p>
-        <p>Total de clientes: {{ fornecedor.numero_total_clientes }}</p>
-        <p>Avaliação média: {{ fornecedor.avaliacao_media }}</p>
       </div>
+      <button class="prev" (click)="prevSlide()">❮</button>
+      <button class="next" (click)="nextSlide()">❯</button>
     </div>
-    <ng-template #semFornecedor>
-      <span>Não tem fornecedor disponível.</span>
-    </ng-template>
   </div>
-  
+  <ng-template #semFornecedor>
+    <span>Não tem fornecedor disponível.</span>
+  </ng-template>
+</div>
