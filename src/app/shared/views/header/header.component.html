@@ -1,0 +1,16 @@
+<header>
+    <div class="logo">Clarke Energia</div>
+    <nav>
+      <ul class="menu" [class.active]="menuActive">
+        <li><a href="#">Fazer Cotação de consumo</a></li>
+        <li><a routerLink="/about">Sobre</a></li>
+        <li><a routerLink="/contact">Contato</a></li>
+      </ul>
+      <div class="hamburger" (click)="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  </header>
+  

@@ -1,0 +1,97 @@
+/* Estilos para o header.component.css */
+header {
+    position: sticky;
+    top: 0;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #238662;
+    margin-bottom: 40px;
+  }
+  
+  .logo {
+    color: #00df7c;
+    font-size: 30px;
+    font-weight: bold;
+    box-shadow: 2px;
+    text-shadow: 2px 2px 4px #000000;
+
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 0 10px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    background-color: #00df7c;
+    border-radius: 5px;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+  
+  /* Responsivo para mobile */
+  @media (max-width: 768px) {
+    header {
+        padding: 10px 10px;
+    }
+    .logo {
+        font-size: 25px;
+    }
+    .menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #238662;
+    }
+    nav {
+        font-size: 15px;
+      }
+    .menu.active {
+      display: flex;
+    }
+  
+    .menu li {
+      margin: 10px 0;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  

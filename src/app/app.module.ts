@@ -9,13 +9,15 @@ import { provideHttpClient } from '@angular/common/http';
 import { HomeComponent } from './shared/viewmodels/home.component';
 import { FornecedorComponent } from './shared/viewmodels/fornecedor.component';
 import { FornecedorService } from './shared/services/fornecedor.service';
+import { HeaderComponent } from './shared/viewmodels/header.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    FornecedorComponent
+    FornecedorComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
