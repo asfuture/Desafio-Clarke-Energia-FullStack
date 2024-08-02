@@ -10,6 +10,7 @@ import { HomeComponent } from './shared/viewmodels/home.component';
 import { FornecedorComponent } from './shared/viewmodels/fornecedor.component';
 import { FornecedorService } from './shared/services/fornecedor.service';
 
+
 @NgModule({
   declarations: [
     AppComponent,

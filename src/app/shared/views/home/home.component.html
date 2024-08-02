@@ -1,10 +1,19 @@
 <h1>Clarke Energia</h1>
 
-<form [formGroup]="formConsumo" (ngSubmit)="onSubmit()">
-  <div class="pequisa">
-      <p>Consumo Mensal de Energia (kWh)</p>
-      <input type="number" id="consumo" formControlName="consumo" name="consumo" required>
-      <button type="submit">Buscar Fornecedores</button>
+<section>
+  <div class="paragrafo">
+    <h2>Torne-se Nosso Cliente</h2>
+    <p>
+      Participe da nossa comunidade exclusiva! Inscreva-se agora e aproveite benefícios extraordinários, ofertas únicas e uma experiência personalizada. Venha fazer parte do melhor da Energia Livre. O processo é simples e rápido. Solicite uma proposta hoje mesmo e comece a desfrutar de todas as vantagens que temos a oferecer!
+    </p>
   </div>
-</form>
+
+  <form [formGroup]="formConsumo" (ngSubmit)="onSubmit()">
+    <div class="pequisa">
+        <p>Digite o seu <b>Consumo Mensal de Energia (kWh)</b> aqui!</p>
+        <input type="number" id="consumo" formControlName="consumo" name="consumo" required>
+        <button type="submit">Buscar Fornecedores</button>
+    </div>
+  </form>
+</section>
   

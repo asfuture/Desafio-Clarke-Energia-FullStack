@@ -1,3 +1,13 @@
 img {
     width: 100px;
 }
+.logoFornecedor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.containerFornecedores{
+    display: flex;
+    flex-wrap: wrap;
+}
+

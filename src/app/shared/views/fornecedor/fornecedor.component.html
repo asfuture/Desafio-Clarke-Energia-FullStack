@@ -1,8 +1,10 @@
 <div *ngIf="fornecedores$ | async as fornecedores">
-    <div *ngIf="fornecedores.length > 0; else semFornecedor">
+    <div class="containerFornecedores" *ngIf="fornecedores.length > 0; else semFornecedor">
       <div *ngFor="let fornecedor of fornecedores">
-        <h3>{{ fornecedor.nome }}</h3>
-        <img [src]="fornecedor.logo" alt="{{ fornecedor.nome }}">
+        <div class="logoFornecedor">
+          <img [src]="fornecedor.logo" alt="{{ fornecedor.nome }}">
+          <h3>{{ fornecedor.nome }}</h3>
+        </div>
         <p>Estado: {{ fornecedor.estado }}</p>
         <p>Custo por kWh: {{ fornecedor.custo_kWh | currency }}</p>
         <p>Limite mínimo de kWh: {{ fornecedor.limite_minimo_kWh }}</p>

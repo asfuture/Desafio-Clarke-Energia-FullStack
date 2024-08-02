@@ -3,16 +3,36 @@ h1 {
     text-align: center;
 }
 
+section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background: #00DF7C;
+        border-radius: 5px;
+        border: 1px solid #000;
+}
+
+h2{
+    text-align: center;
+    color: #000;
+}
+
+.paragrafo {
+    width: 400px;
+    font-size: 18px;
+}
+
 form {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .pequisa {
-    width: 400px;
-    height: 150px;
+    width: 330px;
+    height: 180px;
     text-align: center;
-    border: 2px solid black;
+    border: 2px solid #000;
     border-radius: 10px;
     padding: 10px 10px 30px 10px;
     display: flex;
@@ -20,6 +40,7 @@ form {
     gap: 10px;
     flex-direction: column;
 }
+
 .pequisa p {
     font-size: 20px;
 }
@@ -27,8 +48,19 @@ form {
 button {
     height: 30px;
     border-radius: 5px;
+    border-color: black;
+    font-weight: 800;
 }
+
+button:hover{
+    background:  #00df7c;
+    color: #ffffff;
+    cursor: pointer;
+    
+}
+
 input {
     height: 30px;
     border-radius: 5px;
+    border-color: #000;
 }
