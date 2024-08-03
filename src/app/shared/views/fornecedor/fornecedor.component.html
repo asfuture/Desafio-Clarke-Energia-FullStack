@@ -18,7 +18,10 @@
       <button class="next" (click)="nextSlide()">❯</button>
     </div>
   </div>
-  <ng-template #semFornecedor>
-    <span>Não tem fornecedor disponível.</span>
+  <ng-template class="aviso" #semFornecedor>
+    <div class="aviso-container">
+      <span>No momento, não foi encontrado nenhum fornecedor. <b>Por favor, faça uma nova pesquisa.</b></span>
+    </div>
   </ng-template>
+  
 </div>
