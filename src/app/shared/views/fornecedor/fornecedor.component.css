@@ -81,11 +81,13 @@ img {
   button.prev {
     left: 10px;
     border-radius: 5px;
+    
   }
   
   button.next {
     right: 10px;
     border-radius: 5px;
+    
   }
   
   /* Responsividade para mostrar múltiplos itens em telas maiores */

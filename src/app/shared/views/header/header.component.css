@@ -2,6 +2,7 @@
 header {
     position: sticky;
     top: 0;
+    z-index: 3;
     height: 65px;
     display: flex;
     justify-content: space-between;
@@ -9,6 +10,7 @@ header {
     padding: 10px 20px;
     background-color: #238662;
     margin-bottom: 40px;
+    
   }
   
   .logo {

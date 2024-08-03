@@ -10,6 +10,7 @@ import { HomeComponent } from './shared/viewmodels/home.component';
 import { FornecedorComponent } from './shared/viewmodels/fornecedor.component';
 import { FornecedorService } from './shared/services/fornecedor.service';
 import { HeaderComponent } from './shared/viewmodels/header.component';
+import { FooterComponent } from './shared/viewmodels/footer.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { HeaderComponent } from './shared/viewmodels/header.component';
     AppComponent,
     HomeComponent,
     FornecedorComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
