@@ -9,7 +9,7 @@ footer {
   .footer-icons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 120px;
     margin-bottom: 10px;
   }
   
@@ -22,10 +22,20 @@ footer {
     font-size: 18px;
     margin: 0;
   }
+
+  footer span {
+    text-decoration: none;
+    color: #00df7c;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 2px;
+    text-shadow: 2px 2px 4px #000000;
+
+  }
   
   @media (max-width: 600px) {
     .footer-icons {
-      gap: 10px;
+      gap: 100px;
     }
   
     .footer-icons a img {
