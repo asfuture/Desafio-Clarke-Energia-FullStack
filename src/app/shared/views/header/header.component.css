@@ -13,7 +13,8 @@ header {
     
   }
   
-  .logo {
+  .logo a {
+    text-decoration: none;
     color: #00df7c;
     font-size: 30px;
     font-weight: bold;

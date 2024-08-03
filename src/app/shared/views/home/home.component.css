@@ -38,6 +38,10 @@ form {
 
 .pequisa p {
     font-size: 20px;
+    color: #fff;
+}
+.pequisa b {
+    color: #000;
 }
 
 button {
@@ -58,4 +62,14 @@ input {
     height: 30px;
     border-radius: 5px;
     border-color: #000;
+}
+
+@media (max-width:600px) {
+    section {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    form, .paragrafo {
+        width: 330px;
+    }
 }
