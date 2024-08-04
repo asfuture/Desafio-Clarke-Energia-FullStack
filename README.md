@@ -9,10 +9,10 @@ Bem-vindo ao Desafio Clarke Energia! Esta aplicação web é projetada para o me
 - Um fornecedor só pode atender um cliente caso o consumo mensal de energia deste seja maior do que o lmite mínimo de kWh do fornecedor
 - 
 ### A aplicação está hospedada no vercel e pode ser acessada por este link:
-https://desafio-clarke-energia-fullstack.vercel.app/
+- https://desafio-clarke-energia-fullstack.vercel.app/
 
 ### A API está hospedado no vercel e pode ser acessada por este link:
-https://api-teste-gerais.vercel.app/api/fornecedores
+- https://api-teste-gerais.vercel.app/api/fornecedores
 
 ## Tecnologias Utilizadas
 
