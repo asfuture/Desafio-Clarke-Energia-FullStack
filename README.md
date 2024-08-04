@@ -16,8 +16,8 @@ Bem-vindo ao Desafio Clarke Energia! Esta aplicação web é projetada para o me
 - CSS3
 - TypeScript
 - RxJS
-- Jasmine (para testes unitários)
-- Karma
+- Jest (para testes unitários)
+
 
 ## Como Rodar o Projeto
 
@@ -32,7 +32,7 @@ Bem-vindo ao Desafio Clarke Energia! Esta aplicação web é projetada para o me
 
     ```bash
     git@github.com:asfuture/Desafio-Clarke-Energia-Fullstack.git
-
+    cd Desafio-Clarke-Energia-Fullstack
     ```
 
 2. Instale as dependências:
@@ -58,45 +58,25 @@ Bem-vindo ao Desafio Clarke Energia! Esta aplicação web é projetada para o me
 Para executar os testes unitários, utilize o comando:
 
 ```bash
-ng test
+npm run test:watch
 ```
-## Utilizando Firebase
-### Passos para Hospedar Projeto no Firebase
-### Pré-requisitos
-- Conta no Firebase
-- Firebase CLI
+## Utilizando Docker
+### Passos para construir a Iamgem Docker
+### Depois de clonar o projeto do GitHub para o seu computador, siga estas etapas:
 
-1. Para instalar o Firebase CLI, utilize o comando:
+1. No diretório raiz do projeto, execute o seguinte comando para construir a imagem Docker:
   
   ```bash
-  npm install -g firebase-tools
+  docker build -t clarkeenergia .
   ```
 
-2. Faça login no Firebase CLI:
+2. Executar o Container Docker:
 
   ```bash
-  firebase login
+  docker run -p 8080:80 clarkeenergia
   ```
 
-3. Inicialize o projeto Firebase no diretório do projeto: 
+3. Acessar a Aplicação 
 
-  ```bash
-  firebase init
-  ```
+ - Abra um navegador web e acesse a URL http://localhost:8080 para ver a aplicação em execução.
 
-- Selecione "Hosting"
-- Escolha o projeto no Firebase
-- Configure o diretório público como "dist/nome-do-seu-projeto"
-- Configure como um aplicativo de página única (single-page app)
-
-3. Construa a aplicação para produção:
-
-```bash
-ng build --prod
-```
-
-4. Faça o deploy da aplicação:
-
-```bash
-firebase deploy
-```
