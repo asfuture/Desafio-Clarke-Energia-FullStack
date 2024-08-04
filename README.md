@@ -81,22 +81,10 @@ ng test
 3. Inicialize o projeto Firebase no diretório do projeto: 
 
   ```bash
-  firebase init
+  docker run -p 8080:80 clarkeenergia
   ```
 
-- Selecione "Hosting"
-- Escolha o projeto no Firebase
-- Configure o diretório público como "dist/nome-do-seu-projeto"
-- Configure como um aplicativo de página única (single-page app)
+3. Acessar a Aplicação 
 
-3. Construa a aplicação para produção:
+ - Abra um navegador web e acesse a URL http://localhost:8080 para ver a aplicação em execução.
 
-```bash
-ng build --prod
-```
-
-4. Faça o deploy da aplicação:
-
-```bash
-firebase deploy
-```
