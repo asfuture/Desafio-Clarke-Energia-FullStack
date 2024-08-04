@@ -13,7 +13,9 @@ Bem-vindo ao Desafio Clarke Energia! Esta aplicação web é projetada para o me
 
 ### A API está hospedado no vercel e pode ser acessada por este link:
 - https://api-teste-gerais.vercel.app/api/fornecedores
-
+  
+- GitHub API: https://github.com/asfuture/API-TESTE-GERAIS
+  
 ## Tecnologias Utilizadas
 
 - Angular 18.0.4
