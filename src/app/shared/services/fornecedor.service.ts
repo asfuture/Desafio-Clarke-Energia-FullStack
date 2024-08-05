@@ -28,9 +28,8 @@ export class FornecedorService {
         tap(filteValor => this.exibirValoresFornecedores(filteValor)),
         catchError(error => {
             console.log("Error ao buscar fornecedores:", error);
-            return of([]); // Retorna um Observable com um array vazio
+            return of([]); // Retorna um array vazio
         })
     );
-}
-
+  }
 }

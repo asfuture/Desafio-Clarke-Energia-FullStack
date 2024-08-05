@@ -35,7 +35,6 @@ form {
     gap: 10px;
     flex-direction: column;
 }
-
 .pequisa p {
     font-size: 20px;
     color: #fff;
@@ -50,14 +49,12 @@ button {
     border-color: black;
     font-weight: 800;
 }
-
 button:hover{
     background:  #00df7c;
     color: #ffffff;
     cursor: pointer;
     
 }
-
 input {
     height: 30px;
     border-radius: 5px;
