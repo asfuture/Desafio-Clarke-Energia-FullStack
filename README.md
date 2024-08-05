@@ -69,7 +69,7 @@ Para executar os testes unitários, utilize o comando:
 npm run test:watch
 ```
 ## Utilizando Docker
-### Passos para construir a Iamgem Docker
+### Passos para construir a Imagem Docker
 ### Depois de clonar o projeto do GitHub para o seu computador, siga estas etapas:
 
 1. No diretório raiz do projeto, execute o seguinte comando para construir a imagem Docker:
@@ -88,3 +88,4 @@ npm run test:watch
 
  - Abra um navegador web e acesse a URL http://localhost:8080 para ver a aplicação em execução.
 
+## Autor: Alex Ferreira
