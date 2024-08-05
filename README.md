@@ -25,7 +25,7 @@ Bem-vindo ao Desafio Clarke Energia! Esta aplicação web é projetada para o me
 - TypeScript
 - RxJS
 - Jest (para testes unitários)
-### Arquetetura
+### Arquitetura
 -  MVVM 
   
 
