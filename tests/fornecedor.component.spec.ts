@@ -52,19 +52,19 @@ describe('FornecedorComponent', () => {
       expect(component.currentSlide).toBe(0); // Should go back to slide 0
 
       component.prevSlide();
-      expect(component.currentSlide).toBe(1); // Should go to slide 1 (circular navigation)
+      expect(component.currentSlide).toBe(1); 
     });
   });
 
   it('should navigate to the next slide', () => {
     component.ngOnInit();
     component.fornecedores$.subscribe(() => {
-      component.currentSlide = 0; // Set slide to 0 (first item)
+      component.currentSlide = 0; 
       component.nextSlide();
-      expect(component.currentSlide).toBe(1); // Should go to slide 1
+      expect(component.currentSlide).toBe(1); 
 
       component.nextSlide();
-      expect(component.currentSlide).toBe(0); // Should go back to slide 0 (circular navigation)
+      expect(component.currentSlide).toBe(0); 
     });
   });
 });

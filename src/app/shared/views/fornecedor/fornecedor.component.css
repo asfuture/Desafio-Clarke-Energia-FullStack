@@ -1,6 +1,3 @@
-img {
-    width: 100px;
-}
 .logoFornecedor {
     width: 350px;
     display: flex;
@@ -11,6 +8,13 @@ img {
     border-radius: 5px;
     box-shadow: 2px 2px;
     padding: 10px;
+}
+.logoFornecedor img {
+  width: 100px;
+  height: 100px;
+}
+img {
+  width: 100px;
 }
 
 /* fornecedores.component.css */
@@ -27,7 +31,6 @@ img {
     border: 2px solid black;
     border-radius: 5px;
   }
-  
   .carousel-inner {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -35,7 +38,6 @@ img {
     border: 2px solid black;
     border-radius: 5px;
   }
-  
   .carousel-item {
     min-width: 100%;
     box-sizing: border-box;
@@ -44,7 +46,6 @@ img {
     border-radius: 5px;
     background-color: #fff;
     flex: 0 0 50%; /* Para cada item ocupar 100% do contêiner */
-
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
@@ -60,11 +61,6 @@ img {
     text-align: center;
   }
   
-  .logoFornecedor img {
-    width: 100px;
-    height: 100px;
-  }
-  
   button {
     position: absolute;
     top: 50%;
@@ -77,23 +73,18 @@ img {
     cursor: pointer;
     z-index: 1000;
   }
-  
   button.prev {
     left: 10px;
     border-radius: 5px;
     
   }
-  
   button.next {
     right: 10px;
     border-radius: 5px;
     
   }
 
-  b {
-    color: #000;
-  }
-
+  
   .aviso-container {
     color: red;
     font-size: 20px;
@@ -103,13 +94,15 @@ img {
     height: 21vh;         
     text-align: center;      
   }
-  
   .aviso {
     display: block;
   }
+  b {
+    color: #000;
+  }
   
   
-  /* Responsividade para mostrar múltiplos itens em telas maiores */
+  /* Responsividade mobile */
   @media (max-width: 600px) {
     .logoFornecedor {
       width: 270px;
