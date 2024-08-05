@@ -22,7 +22,6 @@ describe('FooterComponent', () => {
   });
 
   it('should have footer content', () => {
-    // Assume there's some content in the footer template
     const footerElement: HTMLElement = fixture.nativeElement;
     const content = footerElement.textContent?.trim();
     
