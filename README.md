@@ -12,9 +12,10 @@ Bem-vindo ao Desafio Clarke Energia! Esta aplicação web é projetada para o me
 - https://desafio-clarke-energia-fullstack.vercel.app/
 
 ### A API está hospedado no vercel e pode ser acessada por este link:
-- https://api-teste-gerais.vercel.app/api/fornecedores
+- https://api-clarke-ten.vercel.app/api/fornecedores
   
 - GitHub API: https://github.com/asfuture/api-clarke/tree/master
+- 
   
 ## Tecnologias Utilizadas
 
