@@ -1,6 +1,6 @@
 ### Desafio Clarke Energia - Escolha de Fornecedor de Energia
 
-Bem-vindo ao Desafio Clarke Energia! Esta aplicação web é projetada para o mercado livre de energia sustentável, onde você pode encontrar o fornecedor ideal para atender à sua demanda mensal de consumo. Ao informar seu consumo mensal de energia, você poderá escolher entre diversos fornecedores com base em suas necessidades, garantindo que encontre a opção mais adequada para você.
+Bem-vindo ao Desafio Energia Limpa! Esta aplicação web é projetada para o mercado livre de energia sustentável, onde você pode encontrar o fornecedor ideal para atender à sua demanda mensal de consumo. Ao informar seu consumo mensal de energia, você poderá escolher entre diversos fornecedores com base em suas necessidades, garantindo que encontre a opção mais adequada para você.
 
 ## Requisitos de Produto:
 - O usuário deverá informar a sua consumo mensal de energia, exemplo: 30000 kWh (um número fictício > 0)
