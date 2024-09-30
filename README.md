@@ -73,23 +73,22 @@ Para executar os testes unitários, utilize o comando:
 npm run test:watch
 ```
 ## Utilizando Docker
-### Passos para construir a Imagem Docker
-### Depois de clonar o projeto do GitHub para o seu computador, siga estas etapas:
+### Passos para Baixar a imagem Docker
 
-1. No diretório raiz do projeto, execute o seguinte comando para construir a imagem Docker:
-  
-  ```bash
-  docker build -t clarkeenergia .
-  ```
+1. Para baixar a imagem Docker da aplicação, utilize o comando:
 
-2. Executar o Container Docker:
+```bash
+docker pull asfuture/clarkeenergia:latest
+```
 
-  ```bash
-  docker run -p 8080:80 clarkeenergia
-  ```
+2. Para rodar a aplicação usando Docker, utilize o comando:
 
-3. Acessar a Aplicação 
+```bash
+docker run -p 8080:80 asfuture/clarkeenergia:latest
+```
 
- - Abra um navegador web e acesse a URL http://localhost:8080 para ver a aplicação em execução.
+3. Acesse a aplicação no navegador:
+   
+http://localhost:8080
 
-## Autor: Alex Ferreira
+#### Autor: Alex Ferreira
